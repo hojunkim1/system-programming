@@ -1,9 +1,9 @@
-/* task_struct.c: display addresses of variables and functions, choijm@dku.edu*/
+/* task_struct.c: display addresses of variables and functions, choijm@dku.edu */
 #include <stdio.h>
 #include <stdlib.h>
 
-void func1();
-void func2();
+int func1();
+int func2();
 
 int glob1, glob2;
 
@@ -23,17 +23,21 @@ int main()
   return 0;
 }
 
-void func1()
+int func1()
 {
   int f1_local1, f1_local2;
 
   printf("func1 local: \n\t%p, \n\t%p\n", &f1_local1, &f1_local2);
   func2();
+
+  return 0;
 }
 
-void func2()
+int func2()
 {
   int f2_local1, f2_local2;
 
   printf("func2 local: \n\t%p, \n\t%p\n", &f2_local1, &f2_local2);
+
+  return 0;
 }

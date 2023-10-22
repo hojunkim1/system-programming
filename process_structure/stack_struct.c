@@ -4,17 +4,6 @@
 void func1();
 int func2(int x, int y);
 
-// stack
-// main
-// func1
-// 112
-// 111
-// r.a
-// s.ebp
-// 21
-// 22
-// ptr
-
 int main()
 {
   func1();
