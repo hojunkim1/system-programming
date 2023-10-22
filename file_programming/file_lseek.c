@@ -1,9 +1,9 @@
 /* file_lseek.c: lseek example, by choijm. choijm@dku.edu */
-#include <errno.h>
-#include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <fcntl.h>
+#include <errno.h>
 #define MAX_BUF 64
 
 char fname[] = "newfile_lseek.txt";
@@ -25,4 +25,6 @@ int main()
   printf("read_size = %d\n", read_size);
   write_size = write(STDOUT_FILENO, buf, read_size);
   close(fd);
+
+  return 0;
 }
