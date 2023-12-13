@@ -1,4 +1,4 @@
-/* test.c : optimize test by Hojun Kim. meringyee@gmail.com */
+/* test_combine.c : optimize test by Hojun Kim. meringyee@gmail.com */
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
